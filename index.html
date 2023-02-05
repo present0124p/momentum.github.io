@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <form
+      id="login-form"
+      class="hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="what is your name?"
+      />
+      <input type="submit" value="Log in" />
+      
+    </form>
+    <div class="greetings">
+        <h1
+            class="hidden"
+            id="greeting"
+        ></h1>
+        <h2 id="clock">00:00</h2>
+    </div>
+
+    <div id="quotes">
+      <span style="color: white;"></span>
+      <p><span style="color: white;"></span></p>
+    </div>
+
+    <div id="todolist">
+        <h1>할 일 목록</h1>
+        <span id="alert"></span><br>
+        <input id="todo">
+        <button id="add-button">+</button>
+        <div id="todo-list"></div>
+    </div>
+
+    <div id="geolocation">
+        <span id="location"></span><br>
+        <span id="weather"></span><br>
+    </div>
+
+    <script src="src/clock.js"></script>
+    <script src="src/greetings.js"></script>
+    <script src="src/quotes.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/geolocation.js"></script>
+    <script src="src/todolist.js"></script>
+  </body>
+</html>
